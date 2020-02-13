@@ -21,14 +21,27 @@
         <span class="mui-tab-label">搜索</span>
       </router-link>
     </nav>
-    <router-view></router-view>
+    <transition>
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 <script>
 </script>
 <style>
 body {
-  color: gray;
   padding-top: 40px;
+}
+.v-enter {
+  opacity: 0;
+  transform: translateX(100%)
+}
+.v-leave-to{
+  opacity: 0;
+  transform: translateX(-100%);
+  position: absolute;
+}
+.v-enter-active .v-leave-active{
+  transition: all 0.6s ease
 }
 </style>

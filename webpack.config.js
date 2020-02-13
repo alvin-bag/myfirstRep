@@ -36,7 +36,7 @@ module.exports={
             
           
             {test:/\.vue$/,use:["vue-loader"]},
-            {test:/\.(jpg|jpeg|gif|bmp|png)/,use:"url-loader"}
+            {test:/\.(jpg|jpeg|gif|bmp|png|webp)/,use:"url-loader"}
         ]
     },
     plugins:[

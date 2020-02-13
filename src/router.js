@@ -7,6 +7,7 @@ import Search from "./components/tabbar/Searchcom.vue"
 Vue.use(VueRouter);
 var router = new VueRouter({
     routes:[
+        {path:"/",redirect:"/home"},
         {
             path:"/home",component:Home
         },{
